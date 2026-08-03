@@ -31,5 +31,6 @@ O roteiro histórico baseado em *Test-Driven Development with Python* continua s
 - PyTest e GitHub Actions executam a cada envio.
 - A nota automática é complementada por rubrica de autoria, análise crítica e colaboração.
 
-Consulte [DE_PARA_PLANO_ENSINO.md](DE_PARA_PLANO_ENSINO.md), [AVALIACAO_AUTOMATICA.md](AVALIACAO_AUTOMATICA.md) e os roteiros das aulas.
+As seis aulas extensas foram reorganizadas em **12 aulas práticas**, descritas em [PLANO_SUBDIVISAO_LABORATORIOS.md](PLANO_SUBDIVISAO_LABORATORIOS.md).
 
+Consulte também [DE_PARA_PLANO_ENSINO.md](DE_PARA_PLANO_ENSINO.md), [AVALIACAO_AUTOMATICA.md](AVALIACAO_AUTOMATICA.md) e os roteiros dos módulos.
