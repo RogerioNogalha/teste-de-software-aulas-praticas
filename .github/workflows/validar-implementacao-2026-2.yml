@@ -1,0 +1,31 @@
+name: Validar implementação 2026/2
+
+on:
+  push:
+    branches: [implementacao-aulas-1-2-2026-2]
+  pull_request:
+    paths:
+      - "implementacao-2026-2/**"
+      - ".github/workflows/validar-implementacao-2026-2.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: implementacao-2026-2
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: implementacao-2026-2/requirements.txt
+      - run: python -m pip install -r requirements.txt
+      - run: ruff check .
+      - run: pytest --cov=lists --cov-branch --cov-report=term-missing --cov-fail-under=85
+
